@@ -1,0 +1,137 @@
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #aaa; 
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  @media(prefers-reduced-motion: no-preference){
+    * {
+      scroll-behavior: smooth;
+    } 
+  }
+  html, body{
+    box-sizing: border-box;
+    font-family: Arial;
+    margin: 0;
+    min-width: 290px;
+    line-height: 1.5;
+  }
+  #main-doc{
+    position: absolute;
+    margin: 0 0 110px 300px;
+    padding: 20px;
+    background: #cca;
+  }
+  #main-doc header{
+    margin: 0px;
+    text-align: left;
+    color: #225;
+    font-weight: bold;
+  }
+  #main-doc header::before{
+    content: "Java ";
+  }
+  .main-section p, h3{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 2.5;
+    color: #555;
+  }
+  .main-section cite, .main-section ul{
+    text-align: justify;
+    color: #555;
+    margin-left: 70px;
+    line-height: 2.5;
+  }
+  /* Have a good side nav bar */
+  #navbar{
+    min-width: 300px;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid;
+    background: #225;
+  }
+  header{
+    color: #fff;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+  }
+  #navbar ul{
+    height: 88%;
+    padding: 0;
+    overflow-y:auto;
+    overflow-x:hidden;
+  }
+  #navbar li{
+    color: #fff;
+    width: 100%;
+    border-top: 1px solid #aaa;
+    list-style: none;
+    position: relative;
+  }
+  #navbar a{
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+  }
+  #navbar a::before{
+    content: "Java ";
+  }
+  
+  a:hover{
+    background-color: #55f;
+    transition: all 0.6s ease ;
+  }
+  code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin: -20px 0 30px 80px;
+    border-radius: 5px;
+    width: 60%;
+  }
+  @media only screen and (max-width: 768px){
+    #navbar ul {
+      border: 1px solid;
+      height: 207px;
+    }
+    #navbar{
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 270px;
+      border: none;
+      z-index: 0;
+    }
+    #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 270px;
+    }
+  }

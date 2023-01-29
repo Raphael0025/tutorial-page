@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Documentation Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav id="navbar">
+        <header id="header">Java Tutorial</header>
+          <ul>
+            <li><a href="#intro" class="nav-link">Intro</a></li>
+            <li><a href="#variables" class="nav-link">Variables</a></li>
+            <li><a href="#data_types" class="nav-link">Data Types</a></li>
+            <li><a href="#operators" class="nav-link">Operators</a></li>
+            <li><a href="#strings" class="nav-link">Strings</a></li>
+            <li><a href="#math" class="nav-link">Math</a></li>
+          </ul>
+      </nav>
+      <main id="main-doc">
+        <section id="intro" class="main-section">
+          <header>Intro</header>
+          <p>Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language. Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java. Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need to recompile. Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of the underlying computer architecture. The syntax of Java is similar to C and C++, but has fewer low-level facilities than either of them. The Java runtime provides dynamic capabilities (such as reflection and runtime code modification) that are typically not available in traditional compiled languages. As of 2019, Java was one of the most popular programming languages in use according to GitHub, particularly for client–server web applications, with a reported 9 million developers.</p>
+        </section>
+        <section id="variables" class="main-section">
+          <header>Variables</header>
+          <p>A variable is a container which holds the value while the Java program is executed. A variable is assigned with a data type. Variable is a name of memory location. There are three types of variables in java: local, instance and static. </p>
+          <p>A variable is the name of a reserved area allocated in memory. In other words, it is a name of the memory location. It is a combination of "vary + able" which means its value can be changed.</p>
+          <h3>Types of Variables</h3>
+          <cite><strong>There are three types of variables in Java:</strong></cite>
+          <ul>
+            <li>local variable</li>
+            <li>instance variable</li>
+            <li>static variable</li>
+          </ul>
+          <h3>Local Variable</h3>
+          <code>int myNum = 5;               // Integer (whole number)
+            float myFloatNum = 5.99f;    // Floating point number
+            char myLetter = 'D';         // Character
+            boolean myBool = true;       // Boolean
+            String myText = "Hello";     // String</code>
+        </section>
+        <section id="data_types" class="main-section">
+          <header>Data Types</header>
+          <p>Data types are different sizes and values that can be stored in the variable that is made as per convenience and circumstances to cover up all test cases. </p>
+          <p>In Java language, primitive data types are the building blocks of data manipulation. These are the most basic data types available in Java language.</p>
+          <cite><strong>There are 8 types of primitive data types:</strong></cite>
+          <ul>
+            <li>boolean data type</li>
+            <li>byte data type</li>
+            <li>char data type</li>
+            <li>short data type</li>
+            <li>int data type</li>
+            <li>long data type</li>
+            <li>float data type</li>
+            <li>double data type</li>
+          </ul>
+          <h3>Data Types</h3>
+          <code>int myNum = 5;               // Integer (whole number)
+            float myFloatNum = 5.99f;    // Floating point number
+            char myLetter = 'D';         // Character
+            boolean myBool = true;       // Boolean
+            String myText = "Hello";     // String</code>
+        </section>
+        <section id="operators" class="main-section">
+          <header>Operators</header>
+          <p>Java provides a rich set of operators to manipulate variables. Operators are used to perform operations on variables and values.</p>
+          <cite>There are many types of operators in Java which are given below</cite>
+          <ul>
+            <li>Arithmetic Operator</li>
+            <li>Relational Operators</li>
+            <li>Logical Operator</li>
+            <li>Assignment Operator</li>
+          </ul>
+          <h3>Java Operators</h3>
+          <code>int sum1 = 100 + 50;        // 150 (100 + 50)
+            int sum2 = sum1 + 250;      // 400 (150 + 250)
+            int sum3 = sum2 + sum2;     // 800 (400 + 400)
+            int x = 5;
+            int y = 3;
+            System.out.println(x > y); // returns true, because 5 is higher than 3</code>
+        </section>
+        <section id="strings" class="main-section">
+          <header>Strings</header>
+          <p>In Java, string is basically an object that represents sequence of char values. An array of characters works same as Java string. Java String class provides a lot of methods to perform operations on strings such as compare(), concat(), equals(), split(), length(), replace(), compareTo(), intern(), substring() etc. Generally, String is a sequence of characters. But in Java, string is an object that represents a sequence of characters. The java.lang.String class is used to create a string object.</p>
+          <p>Whenever it encounters a string literal in your code, the compiler creates a String object with its value in this case, "Hello world!'.
+
+As with any other object, you can create String objects by using the new keyword and a constructor. The String class has 11 constructors that allow you to provide the initial value of the string using different sources, such as an array of characters.</p>
+          <p>A String in Java is actually an object, which contain methods that can perform certain operations on strings. For example, the length of a string can be found with the length() method:</p>
+          <h3>Java Strings</h3>
+          <code>String greeting = "Hello";
+            String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+System.out.println("The length of the txt string is: " + txt.length());
+String txt = "Hello World"; // Outputs: The length of the txt string is: 26
+System.out.println(txt.toUpperCase());   // Outputs "HELLO WORLD"
+System.out.println(txt.toLowerCase());   // Outputs "hello world"
+          </code>
+        </section>
+        <section id="math" class="main-section">
+          <header>Math</header>
+          <p>Java Math class provides several methods to work on math calculations like min(), max(), avg(), sin(), cos(), tan(), round(), ceil(), floor(), abs() etc.
+
+Unlike some of the StrictMath class numeric methods, all implementations of the equivalent function of Math class can't define to return the bit-for-bit same results. This relaxation permits implementation with better-performance where strict reproducibility is not required.
+
+If the size is int or long and the results overflow the range of value, the methods addExact(), subtractExact(), multiplyExact(), and toIntExact() throw an ArithmeticException.
+
+For other arithmetic operations like increment, decrement, divide, absolute value, and negation overflow occur only with a specific minimum or maximum value. It should be checked against the maximum and minimum value as appropriate. The java.lang.Math class contains various methods for performing basic numeric operations such as the logarithm, cube root, and trigonometric functions etc.</p>
+          <h3>Java Maths</h3>
+          <code>Math.max(5, 10);
+            Math.min(5, 10);
+            Math.sqrt(64);
+            Math.abs(-4.7);
+            Math.random();
+            int randomNum = (int)(Math.random() * 101);  // 0 to 100
+
+            //Output:
+            10
+            5
+            8.0
+            4.7
+            91</code>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
